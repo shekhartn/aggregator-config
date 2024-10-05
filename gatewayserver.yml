@@ -9,7 +9,8 @@ spring:
         - id: customer
           uri: lb:http://CUSTOMER
           predicates:
-            - Path = /api/v1/customers/**
+            - Path=/api/v1/customers/**
+
 
 #Eureka Server Configuration
 eureka:
@@ -23,3 +24,4 @@ eureka:
 
 server:
   port: 8092
+
