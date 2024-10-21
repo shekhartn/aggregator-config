@@ -13,7 +13,7 @@ spring:
       ddl-auto: update
     show-sql: true
 server:
-  port: 8894
+  port: 8898
   
 #Eureka Server Configuration
 eureka:
