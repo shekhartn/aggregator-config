@@ -5,17 +5,6 @@ spring:
         locator:
           enabled: false
           lowerCaseServiceId: true
-      routes:
-        - id: customer
-          uri: lb:http://CUSTOMER
-          predicates:
-            - Path=/api/customers/**
-        - id: bus
-          uri: lb:http://BUS
-          predicates:
-            - Path=/api/buses/**
-
-
 #Eureka Server Configuration
 eureka:
   instance:
